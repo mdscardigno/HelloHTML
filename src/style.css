@@ -1,10 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;700&display=swap');
 :root {
   font: 16px / 1 sans-serif;
+  --sea: #5a9090;
+  --asphalt: #2f3737;
+  --sand: #f7f0da;
 }
 html {
   height: 100%;
 }
 body {
+  background-color: val(--sand);
   margin: 0;
   min-height: 100%;
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.hello {
+  border-radius: 30%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 45%;
+  border: 5px dotted rgb(61, 62, 61);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+p {
+  margin: 3rem;
+  display: block;
+  /* overflow: auto; */
+  height: auto;
+  /* background-color: var(--sea); */
+}
+
+.nav-items {
+  list-style-type: none;
+  text-align: center;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: var(--asphalt);
+}
+
+.nav-items a:hover {
+  color: var(--sea);
+}
+
+.animals {
+  display: block;
+  list-style-type: none;
+}
+hr {
+  border: 5px dotted rgb(61, 62, 61);
+  margin: 0 auto;
+}
+
+img {
+  margin: auto;
+  width: 10%;
+  height: auto;
+  display: block;
+}
+div.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
